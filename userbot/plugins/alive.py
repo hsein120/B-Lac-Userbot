@@ -32,13 +32,13 @@ async def ica(icss):
     if ICSS_IMG:
         ics_c = f"**{ICSS_TEXT}**\n"
         ics_c += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻 \n"
-        ics_c += f"**{ICSEM} قاعدة البيانات ↫** `{check_sgnirts}`\n"
-        ics_c += f"**{ICSEM} اصدار التليثون  ↫** `{version.__version__}\n`"
-        ics_c += f"**{ICSEM} اصدار اڪسس ↫** `{icsv}`\n"
-        ics_c += f"**{ICSEM} اصدار البايثون ↫** `{python_version()}\n`"
-        #        ics_c += f"**{ICSEM} مدة التشغيل ↫** `{icsupt}\n`"
-        ics_c += f"**{ICSEM} المستخدم ↫** {mention}\n"
-        ics_c += f"**{ICSEM} مطور السورس ↫** [اضغط هنا](https://t.me/lXKKl) 𓆰.\n"
+        ics_c += f"**{ICSEM} قاعدة البيانات↫** `{check_sgnirts}`\n"
+        ics_c += f"**{ICSEM} اصدار التليثون↫** `{version.__version__}\n`"
+        ics_c += f"**{ICSEM} اصدار العربي↫** `{icsv}`\n"
+        ics_c += f"**{ICSEM} اصدار البايثون↫** `{python_version()}\n`"
+        #        ics_c += f"**{ICSEM} مدة التشغيل↫** `{icsupt}\n`"
+        ics_c += f"**{ICSEM} المنشئ ↫** {mention}\n"
+        ics_c += f"**{ICSEM} مطور السورس ↫** [مراسله المطور اضغط](https://t.me/lXKKl) 𓆰.\n"
         ics_c += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
         await icss.client.send_file(
             icss.chat_id, ICSS_IMG, caption=ics_c, reply_to=ics_id
@@ -48,12 +48,12 @@ async def ica(icss):
         await eor(
             icss,
             f"**{ICSS_TEXT}**\n\n"
-            f"**{ICSEM} قاعدة البيانات ↫**  `{check_sgnirts}`\n"
-            f"**{ICSEM} اصدار التليثون  ↫** `{version.__version__}\n`"
-            f"**{ICSEM} اصدار اڪسس ↫** `{icsv}`\n"
-            f"**{ICSEM} اصدار البايثون  ↫** `{python_version()}\n`"
-            f"**{ICSEM} مدة التشغيل ↫** `{icsupt}\n`"
-            f"**{ICSEM} المستخدم ↫** {mention}\n",
+            f"**{ICSEM} قاعدة البيانات↫**  `{check_sgnirts}`\n"
+            f"**{ICSEM} اصدار التليثون↫** `{version.__version__}\n`"
+            f"**{ICSEM} اصدار العربي↫** `{icsv}`\n"
+            f"**{ICSEM} اصدار البايثون↫** `{python_version()}\n`"
+            f"**{ICSEM} مدة التشغيل↫** `{icsupt}\n`"
+            f"**{ICSEM} المستخدم↫** {mention}\n",
         )
 
 
