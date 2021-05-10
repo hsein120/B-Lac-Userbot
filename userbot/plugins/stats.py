@@ -64,7 +64,7 @@ async def stats(event):
         unread += dialog.unread_count
     stop_time = time.time() - start_time
     full_name = inline_mention(await event.client.get_me())
-    response = f"𓆩 𝑺𝑶𝑼𝑹𝑪𝑬 𝑰𝑪𝑺𝑺 𝑺𝑻𝑨𝑻𝑺 𝑼𝑺𝑬𝑹 𓆪\n𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n **⌔∮ معلومات عن - {full_name}** \n\n"
+    response = f"𓆩 المطور حسين كريم  𓆪\n𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n **⌔∮ معلومات عن - {full_name}** \n\n"
     response += f"**⌔∮ الدردشات الخاصه :** {private_chats} \n"
     response += f"   - المستخدمين : `{private_chats - bots}` \n"
     response += f"   - البوتات : `{bots}` \n"
