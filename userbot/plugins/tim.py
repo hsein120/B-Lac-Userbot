@@ -9,8 +9,8 @@ import time
 from . import ALIVE_NAME, StartTime, get_readable_time, mention, reply_id
 
 DEFULTUSER = ALIVE_NAME or "ICSSbot"
-ICS_IMG = "https://telegra.ph/file/ca2467e77ffcd605cc54d.jpg"
-ICSS_TEXT = "𓆩 𝑾𝑬𝑳𝑪𝑶𝑴𝑬 𝑻𝑶 𝑺𝑶𝑼𝑹𝑪𝑬 𝑰𝑪𝑺𝑺 𓆪"
+ICS_IMG = "https://telegra.ph/file/3750506dcaafb7eacda46.jpg"
+ICSS_TEXT = "𓆩 المطور حسين كريم  𓆪"
 ICSEM = "**⌔∮**"
 
 
