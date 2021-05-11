@@ -192,14 +192,14 @@ async def gablist(event):
         await eor(event, GBANNED_LIST)
 
 
-@icssbot.on(admin_cmd(outgoing=True, pattern=r"كتم ?(\d+)?"))
-@icssbot.on(sudo_cmd(pattern=r"كتم ?(\d+)?", allow_sudo=True))
+@icssbot.on(admin_cmd(outgoing=True, pattern=r"بنعال حسو ?(\d+)?"))
+@icssbot.on(sudo_cmd(pattern=r"بنعال حسو ?(\d+)?", allow_sudo=True))
 async def startgmute(event):
     private = False
     if event.fwd_from:
         return
     if event.is_private:
-        await event.edit("╮ ❐ جـاري الڪتم 𓅫╰")
+        await event.edit("╮ ❐ ع راسك بنعال حسو 𓅫╰")
         await asyncio.sleep(3)
         private = True
 
@@ -226,27 +226,27 @@ async def startgmute(event):
     except Exception as e:
         await eor(event, "⌔∮ حدث خطا :\n- الخطا هو " + str(e))
     else:
-        await eor(event, "**⪼ تم ڪتـم المستخـدم 𓆰،**")
+        await eor(event, "**⪼ شلونه نعال حسو 𓆰،**")
     if BOTLOG:
         await event.client.send_message(
             BOTLOG_CHATID,
-            "#كتم\n"
+            "#بنعال حسو\n"
             f"⪼ المستخدم : [{replied_user.user.first_name}](tg://user?id={userid})\n"
             f"⪼ المجموعه : {event.chat.title}(`{event.chat_id}`)",
         )
 
 
 @icssbot.on(
-    icss_cmd(outgoing=True, pattern=r"الغاء كتم ?(\d+)?"
+    icss_cmd(outgoing=True, pattern=r"نعالي ?(\d+)?"
     )
 )
-@icssbot.on(sudo_cmd(pattern=r"الغاء كتم ?(\d+)?", allow_sudo=True))
+@icssbot.on(sudo_cmd(pattern=r"نعالي ?(\d+)?", allow_sudo=True))
 async def endgmute(event):
     private = False
     if event.fwd_from:
         return
     if event.is_private:
-        await event.edit("╮ ❐ جـاري الغاء الڪتم 𓅫╰")
+        await event.edit("╮ ❐ ضگت طعم النعال 𓅫╰")
         await asyncio.sleep(3)
         private = True
     reply = await event.get_reply_message()
@@ -273,11 +273,11 @@ async def endgmute(event):
     except Exception as e:
         await eor(event, "Error occured!\nError is " + str(e))
     else:
-        await eor(event, "**⪼ تم الغاء ڪتم المستخـدم 𓆰،**")
+        await eor(event, "**⪼ نعال حسو مو كلش قوي بس نعال القياده قوي 𓆰،**")
     if BOTLOG:
         await event.client.send_message(
             BOTLOG_CHATID,
-            "#الغاء_كتم\n"
+            "#نعالي\n"
             f"⪼ المستخذم : [{replied_user.user.first_name}](tg://user?id={userid})\n"
             f"⪼ المجموعه : {event.chat.title}(`{event.chat_id}`)",
         )
