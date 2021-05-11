@@ -145,7 +145,7 @@ if Config.PRIVATE_GROUP_ID != 0:
     @icssbot.on(admin_cmd(pattern="المسموح لهم$"))
     async def approve_p_m(event):
         approved_users = pmpermit_sql.get_all_approved()
-        APPROVED_PMs = "𓆰 𝑺𝑶𝑼𝑹𝑪𝑬 𝑰𝑪𝑺𝑺 - 𝑨𝑷𝑷𝑹𝑶𝑽𝑬𝑫𝑺 𓆪\n 𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
+        APPROVED_PMs = "𓆰 المطور حسين كريم 𓆪\n 𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
         if len(approved_users) > 0:
             for sender in approved_users:
                 if sender.reason:
@@ -259,9 +259,9 @@ if Config.PRIVATE_GROUP_ID != 0:
             else:
 
                 USER_BOT_NO_WARN = (
-                    f"𓆩𝑺𝑶𝑼𝑹𝑪𝑬 𝑰𝑪𝑺𝑺 - 𝑷𝑴 𝑺𝑬𝑪𝑼𝑹𝑰𝑻𝒀𓆪\n𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𝐢𝐜𝐬𝐬ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n❞ هها هلو  {mention} ❝\n ⤶ انا مشغول الان لاترسل لي رسائل كثيره والا سيتم حظرك."
+                    f"𓆩المطور حسين كريم𓆪\n𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n❞ هها هلو  {mention} ❝\n ⤶ انا مشغول الان لاترسل لي رسائل كثيره والا سيتم حظرك."
                     f"فقط قل سبب مجيئك ونتظر حته اعود لكي تتم الموافقه عليك.\
-                                    \n ⤶ ❨ **عندك** {warns}/{totalwarns} **تحذيرات** ❩\n𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𝐢𝐜𝐬𝐬ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻"
+                                    \n ⤶ ❨ ** عندك * {warns}/{totalwarns} **تحذيرات** ❩\n𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻"
                 )
         else:
             if Config.CUSTOM_PMPERMIT_TEXT:
@@ -282,9 +282,9 @@ if Config.PRIVATE_GROUP_ID != 0:
                 )
             else:
                 USER_BOT_NO_WARN = (
-                    f"𓆩𝑺𝑶𝑼𝑹𝑪𝑬 𝑰𝑪𝑺𝑺 - 𝑷𝑴 𝑺𝑬𝑪𝑼𝑹𝑰𝑻𝒀𓆪\n𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𝐢𝐜𝐬𝐬ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n❞ هها هلو  {mention} ❝\n ⤶ انا مشغول الان لاترسل لي رسائل كثيره والا سيتم حظرك."
+                    f"𓆩المطور حسين كريم𓆪\n𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n❞ هها هلو  {mention} ❝\n ⤶ انا مشغول الان لاترسل لي رسائل كثيره والا سيتم حظرك."
                     f"فقط قل سبب مجيئك ونتظر حته اعود لكي تتم الموافقه عليك.\
-                                    \n ⤶ ❨ **عندك** {warns}/{totalwarns} **تحذيرات** ❩\n𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𝐢𝐜𝐬𝐬ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻"
+                                    \n ⤶ ❨ **عندك** {warns}/{totalwarns} **تحذيرات** ❩\n𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻"
                 )
         if PMPERMIT_PIC:
             r = await event.reply(USER_BOT_NO_WARN, file=PMPERMIT_PIC)
