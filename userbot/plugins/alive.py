@@ -16,8 +16,8 @@ from . import ALIVE_NAME, StartTime, get_readable_time, icsv, mention
 from . import reply_id as rd
 
 DEFAULTUSER = ALIVE_NAME or "ICSS"
-ICSS_IMG = Config.ALIVE_PIC or "https://telegra.ph/file/5dc264df6523a53cbeb0e.jpg"
-ICSS_TEXT = Config.CUSTOM_ALIVE_TEXT or "𓆩 المطور حسين كريم 𓆪"
+ICSS_IMG = Config.ALIVE_PIC or "https://telegra.ph/file/1aea097791327571bc604.jpg"
+ICSS_TEXT = Config.CUSTOM_ALIVE_TEXT or "𓆩سورس الفرقه الذهبيه𓆪"
 ICSEM = Config.CUSTOM_ALIVE_EMOJI or "  ⌔∮ "
 
 
@@ -38,7 +38,7 @@ async def ica(icss):
         ics_c += f"**{ICSEM} اصدار البايثون↫** `{python_version()}\n`"
         #        ics_c += f"**{ICSEM} مدة التشغيل↫** `{icsupt}\n`"
         ics_c += f"**{ICSEM} المنشئ ↫** {mention}\n"
-        ics_c += f"**{ICSEM} مطور السورس ↫** [مراسله المطور اضغط](https://t.me/lXKKl) 𓆰.\n"
+        ics_c += f"**{ICSEM}المطور باز ال مدلول  ↫** [مراسله المطور اضغط (https://t.me/wlk_56) 𓆰.\n"
         ics_c += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
         await icss.client.send_file(
             icss.chat_id, ICSS_IMG, caption=ics_c, reply_to=ics_id
