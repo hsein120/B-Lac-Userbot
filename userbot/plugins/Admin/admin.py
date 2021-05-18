@@ -507,8 +507,8 @@ async def endmute(event):
 # ====================================================== #
 
 
-@icssbot.on(icss_cmd(pattern="بنعال القياده(?: |$)(.*)", command="kick"))
-@icssbot.on(sudo_cmd(pattern="بنعال القياده(?: |$)(.*)", command="kick", allow_sudo=True))
+@icssbot.on(icss_cmd(pattern="بنعال باز(?: |$)(.*)", command="kick"))
+@icssbot.on(sudo_cmd(pattern="بنعال باز(?: |$)(.*)", command="kick", allow_sudo=True))
 async def kick(usr):
     if usr.fwd_from:
         return
@@ -522,7 +522,7 @@ async def kick(usr):
     if not user:
         await eor(usr, "**تعذر جلب المستخدم.**")
         return
-    icse = await eor(usr, "**نعال القياده قوي. 😂👍...**")
+    icse = await eor(usr, "**نعال باز قوي. 😂👍...**")
     try:
         await usr.client.kick_participant(usr.chat_id, user.id)
         await sleep(0.5)
@@ -531,16 +531,16 @@ async def kick(usr):
         return
     if reason:
         await icse.edit(
-            f"**- ❝ ⌊  تم طردة بنعال القياده** [{user.first_name}](tg://user?id={user.id})  𓆰."
+            f"**- ❝ ⌊  تم طردة بنعال باز** [{user.first_name}](tg://user?id={user.id})  𓆰."
         )
     else:
         await icse.edit(
-            f"**- ❝ ⌊  تم طردة بنعال القياده** [{user.first_name}](tg://user?id={user.id})  𓆰."
+            f"**- ❝ ⌊  تم طردة بنعال باز** [{user.first_name}](tg://user?id={user.id})  𓆰."
         )
     if BOTLOG:
         await usr.client.send_message(
             BOTLOG_CHATID,
-            "#بنعال القياده\n"
+            "#بنعال باز\n"
             f"المستخدم: [{user.first_name}](tg://user?id={user.id})\n"
             f"الدردشه: {usr.chat.title}(`{usr.chat_id}`)\n",
         )
